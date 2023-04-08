@@ -6,9 +6,7 @@ public abstract class Transport {
         return modelName;
     }
 
-    public int getWheelsCount() {
-        return wheelsCount;
-    }
+
 
     public Transport(String modelName, int wheelsCount) {
         this.modelName = modelName;
@@ -17,10 +15,8 @@ public abstract class Transport {
     }
 
     public void updateTyre() {
-        for (int i = 0; i <= getWheelsCount(); i++) {
-            System.out.println("Меняем покрышку");}
 
-    }
+            System.out.println("Меняем покрышку");  }
 
 
 }

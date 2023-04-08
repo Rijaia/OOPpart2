@@ -4,11 +4,11 @@ public class Car extends Transport {
         super(modelName, wheelsCount);
          }
 
+
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
     }
-    public void check(Car car) {
 
-        checkEngine();
-    }
+
+
 }

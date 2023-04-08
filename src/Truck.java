@@ -10,12 +10,6 @@ public class Truck extends Transport{
     public Truck(String modelName, int wheelsCount) {
        super(modelName, wheelsCount);
     }
-    public void check(Truck truck) {
-        printCheck(truck);
-        truck.checkEngine();
-        truck.checkTrailer();
-    }
 
-    private void printCheck(Truck truck) {
-    }
+
 }
