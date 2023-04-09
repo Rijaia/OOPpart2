@@ -9,13 +9,14 @@ public class Main {
         Bicycle bicycle = new Bicycle("bicycle1",2);
         Bicycle bicycle2 = new Bicycle("bicycle2",2);
 
+        ServiceStation serviceStation = new ServiceStation();
+        serviceStation.printCheck(car);
+        serviceStation.printCheck(car2);
+        serviceStation.printCheck(truck);
+        serviceStation.printCheck(truck2);
+        serviceStation.printCheck(bicycle);
+        serviceStation.printCheck(bicycle2);
 
-        ServiceStation station = new ServiceStation();
-        station.check(car, null, null);
-        station.check(car2, null, null);
-        station.check(null, bicycle, null);
-        station.check(null, bicycle2, null);
-        station.check(null, null, truck);
-        station.check(null, null, truck2);
+
     }
 }

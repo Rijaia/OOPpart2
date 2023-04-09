@@ -1,21 +1,32 @@
 public class ServiceStation implements Service {
-    @Override
-    public void check(Car car, Bicycle bicycle, Truck truck) {
-        if (car != null) {
-            printCheck(car);
-            car.checkEngine();
-        } else if (truck != null) {
-           printCheck(truck);
-            truck.checkEngine();
-            truck.checkTrailer();
-        } else {
-            printCheck(bicycle);
+
+
+
+    public void printCheck (Transport transport){
+            System.out.println("Обслуживаем " + transport.getModelName());
+            for (int i = 0; i < transport.getWheelsCount(); i++) {
+                transport.updateTyre();
         }
     }
-    private void printCheck (Bicycle bicycle){
-            System.out.println("Обслуживаем " + bicycle.modelName);
-            for (int i = 0; i < bicycle.wheelsCount; i++) {
-                bicycle.updateTyre();
-        }
+
+
+     public void printCheck(Car car) {
+         System.out.println("Обслуживаем " + car.getModelName());
+         for (int i = 0; i < car.getWheelsCount(); i++) {
+             car.updateTyre();
+         }
+        car.checkEngine();
+
     }
+    public void printCheck(Truck truck) {
+        System.out.println("Обслуживаем " + truck.getModelName());
+        for (int i = 0; i < truck.getWheelsCount(); i++) {
+            truck.updateTyre();
+        }
+        truck.checkEngine();
+        truck.checkTrailer();
+
+    }
+
+
 }
