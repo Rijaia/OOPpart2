@@ -1,6 +1,6 @@
 public class Truck extends Transport{
     public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+        System.out.println("Проверяем двигатель грузовика");
     }
 
     public void checkTrailer() {
